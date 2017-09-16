@@ -4,7 +4,157 @@ dark blue: #06365f
 light blue: #1c5380
 */
 
+/*reset */
+
+* {
+  /*border: solid 1px blue;*/
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
 body {
   font: 200 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
-  margin: 0;
+  background: url("../images/bgtile.png") repeat-x;
 }
+
+  main {
+    width: 850px;
+    margin:90px auto 20px;
+    overflow: hidden;
+    /*border: solid 1px blue;*/
+  }
+
+    main > img {
+      float: left;
+    }
+
+    header {
+      float: right;
+      width: 504px;
+      margin-bottom: 35px;
+      padding:0 5px;
+    }
+      header > img{
+        width: 250px;
+        float: left;
+      }
+
+      header ul {
+        list-style: none;
+        width: 150px;
+        float: right;
+        margin-top: 11px;
+      }
+
+      header ul img {
+        margin-top: 7.5px;
+        float: left;
+      }
+
+      header li{
+        width: 100px;
+        height: 40px;
+        float: right;
+        border: solid 1px #2F5B83;
+        background: #6d91af;
+        background: -moz-linear-gradient(top, #6d91af 0%, #457298 100%);
+        background: -webkit-linear-gradient(top, #6d91af 0%,#457298 100%);
+        background: linear-gradient(to bottom, #6d91af 0%,#457298 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6d91af', endColorstr='#457298',GradientType=0 );
+        padding-left: 10px;
+        line-height: 40px;
+      }
+
+      header a{
+        float: right;
+        margin-right: 10px;
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+
+    article {
+        float: right;
+        width: 504px;
+        background: url("../images/frame.png") no-repeat;
+        padding: 35px;
+    }
+
+      article h2 {
+        color: #06365f;
+        font-size: 27px;
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+
+      article p {
+        font-size: 16px;
+        margin-bottom: 10px;
+      }
+      article p:nth-child(4) {
+        margin-bottom: 40px;
+      }
+
+      article ul{
+        float: left;
+        /*overflow: hidden;*/
+      }
+        article li{
+          float: left;
+          margin-right: 20px;
+        }
+
+        article a{
+          display: block;
+          width: 164px;
+          height: 51px;
+          }
+            article li:first-child a {
+              background: #fff url("../images/badge-iphone.png");
+            }
+
+            article li:last-child a {
+              width: 153px;
+              background: #fff url("../images/badge-android.png");
+            }
+
+          article span{
+            display: none;
+          }
+
+  footer {
+    width: 850px;
+    margin: 0 auto;
+
+  }
+
+      footer ul {
+        width: 581.11px;
+        margin:0 auto;
+        overflow: hidden;
+      }
+
+        footer li{
+          float: left;
+          margin-right: 20px;
+          font-size: 11px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+        footer li:last-child {
+          margin-right: 0;
+          color: #999;
+        }
+
+          footer a{
+            color: #1c5380;
+            font-size: 11px;
+            text-decoration: none;
+          }
